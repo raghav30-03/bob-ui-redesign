@@ -1,0 +1,130 @@
+/* ==========================================
+   MOBILE APP PAGE
+========================================== */
+
+.mobileapp-page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 20px 100px;
+}
+
+/* ---------- Hero ---------- */
+
+.mobileapp-hero {
+    text-align: center;
+    max-width: 620px;
+    margin: 0 auto 60px;
+}
+
+.mobileapp-hero .section-badge {
+    display: inline-block;
+    padding: 6px 16px;
+    margin-bottom: 16px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--primary);
+    background: #fff1e5;
+    border-radius: 999px;
+}
+
+.mobileapp-hero h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--text);
+    margin: 0 0 14px;
+}
+
+.mobileapp-hero p {
+    color: var(--text-light);
+    line-height: 1.8;
+    margin: 0 0 28px;
+}
+
+.mobileapp-badges {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.store-badge {
+    padding: 12px 20px;
+    border-radius: 10px;
+    background: var(--text);
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.store-badge:hover {
+    background: var(--primary);
+}
+
+/* ---------- Features grid ---------- */
+
+.mobileapp-features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.feature-card {
+    background: #fff;
+    border: 1px solid #edf2f7;
+    border-radius: 18px;
+    padding: 26px 22px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    box-shadow: 0 20px 45px rgba(15, 23, 42, 0.1);
+    transform: translateY(-6px);
+}
+
+.feature-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 16px;
+    border-radius: 14px;
+    background: #fff1e5;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.feature-card h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text);
+    margin: 0 0 8px;
+}
+
+.feature-card p {
+    font-size: 0.87rem;
+    color: var(--text-light);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 900px) {
+    .mobileapp-features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .mobileapp-features {
+        grid-template-columns: 1fr;
+    }
+
+    .mobileapp-hero h1 {
+        font-size: 1.9rem;
+    }
+}

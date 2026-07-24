@@ -1,0 +1,229 @@
+/* ==========================================================================
+   Security.css
+   Section: "Banking You Can Trust"
+   ========================================================================== */
+
+.security-section {
+    --security-orange: #f5821f;
+    --security-orange-light: #fff1e5;
+    --security-dark: #1a1a2e;
+    --security-text-muted: #6b7280;
+    --security-border: #eef0f3;
+    --security-ease: cubic-bezier(0.16, 1, 0.3, 1);
+
+    position: relative;
+    padding: 100px 0;
+    background: #fbfbfd;
+    overflow: hidden;
+}
+
+/* Subtle ambient backdrop, keeps the section from feeling flat */
+.security-section::before {
+    content: "";
+    position: absolute;
+    top: -120px;
+    right: -120px;
+    width: 420px;
+    height: 420px;
+    background: radial-gradient(
+        circle,
+        var(--security-orange-light) 0%,
+        rgba(255, 255, 255, 0) 70%
+    );
+    pointer-events: none;
+}
+
+.security-section .container {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* ---------------- Section header ---------------- */
+
+.security-section .section-header {
+    max-width: 640px;
+    margin: 0 auto 56px;
+}
+
+.security-section .text-center {
+    text-align: center;
+}
+
+.security-section .section-badge {
+    display: inline-block;
+    padding: 6px 16px;
+    margin-bottom: 16px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: var(--security-orange);
+    background: var(--security-orange-light);
+    border-radius: 999px;
+}
+
+.security-section .section-title {
+    font-size: clamp(28px, 3.5vw, 38px);
+    font-weight: 700;
+    line-height: 1.25;
+    color: var(--security-dark);
+    margin-bottom: 14px;
+}
+
+.security-section .section-title span {
+    color: var(--security-orange);
+}
+
+.security-section .section-description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--security-text-muted);
+}
+
+/* ---------------- Grid (bootstrap-style, plain CSS) ---------------- */
+
+.security-section .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -12px;
+}
+
+.security-section .row.g-4 {
+    row-gap: 24px;
+}
+
+.security-section [class*="col-"] {
+    padding: 0 12px;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .security-section .col-md-6 {
+        width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .security-section .col-lg-3 {
+        width: 25%;
+    }
+}
+
+/* ---------------- Security card ---------------- */
+
+.security-card {
+    height: 100%;
+    padding: 32px 24px;
+    background: #ffffff;
+    border: 1px solid var(--security-border);
+    border-radius: 16px;
+    text-align: center;
+    cursor: default;
+    transition:
+        box-shadow 0.45s var(--security-ease),
+        border-color 0.45s var(--security-ease);
+}
+
+.security-card:hover {
+    border-color: transparent;
+    box-shadow: 0 20px 40px -12px rgba(26, 26, 46, 0.12);
+}
+
+.security-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 20px;
+    font-size: 24px;
+    color: var(--security-orange);
+    background: var(--security-orange-light);
+    border-radius: 14px;
+    transition:
+        background 0.45s var(--security-ease),
+        color 0.45s var(--security-ease),
+        transform 0.45s var(--security-ease);
+}
+
+.security-card:hover .security-icon {
+    background: var(--security-orange);
+    color: #ffffff;
+    transform: scale(1.08) rotate(-4deg);
+}
+
+.security-card h4 {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--security-dark);
+    margin-bottom: 8px;
+}
+
+.security-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--security-text-muted);
+    margin: 0;
+}
+
+/* ---------------- Bottom CTA ---------------- */
+
+.security-bottom {
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+}
+
+.bob-btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 28px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+    background: var(--security-orange);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition:
+        transform 0.35s var(--security-ease),
+        box-shadow 0.35s var(--security-ease),
+        background 0.35s var(--security-ease);
+}
+
+.bob-btn-primary svg {
+    transition: transform 0.35s var(--security-ease);
+}
+
+.bob-btn-primary:hover {
+    background: #e0700f;
+    box-shadow: 0 12px 28px -8px rgba(245, 130, 31, 0.45);
+    transform: translateY(-2px);
+}
+
+.bob-btn-primary:hover svg {
+    transform: translateX(4px);
+}
+
+.bob-btn-primary:active {
+    transform: translateY(0);
+}
+
+/* ---------------- Responsive ---------------- */
+
+@media (max-width: 767px) {
+    .security-section {
+        padding: 64px 0;
+    }
+
+    .security-section .section-header {
+        margin-bottom: 40px;
+    }
+
+    .security-card {
+        padding: 28px 20px;
+    }
+}

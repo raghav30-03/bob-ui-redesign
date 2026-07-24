@@ -1,0 +1,297 @@
+/* ==========================================
+   DASHBOARD PAGE
+========================================== */
+
+.dashboard-page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 20px 100px;
+}
+
+/* ---------- Header ---------- */
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.dashboard-header h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--text);
+    margin: 0 0 8px;
+}
+
+.dashboard-header p {
+    color: var(--text-light);
+    margin: 0;
+}
+
+.greeting-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: #fff1e5;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    flex-shrink: 0;
+}
+
+/* ---------- Balance banner ---------- */
+
+.balance-box {
+    background: linear-gradient(135deg, #f36b21, #ff934d);
+    border-radius: 20px;
+    padding: 32px;
+    color: #fff;
+    margin-bottom: 24px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.balance-label {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    margin: 0 0 8px;
+}
+
+.balance-amount {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.balance-footer a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.18);
+    padding: 12px 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.balance-footer a:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* ---------- Quick actions ---------- */
+
+.action-row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.action-item {
+    background: #fff;
+    border: 1px solid #edf2f7;
+    border-radius: 16px;
+    padding: 20px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+    transition: 0.3s;
+}
+
+.action-item:hover {
+    box-shadow: 0 16px 36px rgba(15, 23, 42, 0.1);
+    transform: translateY(-4px);
+}
+
+.action-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    background: #fff1e5;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.action-item span {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--text);
+    text-align: center;
+}
+
+/* ---------- Content grid ---------- */
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 20px;
+}
+
+.dashboard-card {
+    background: #fff;
+    border: 1px solid #edf2f7;
+    border-radius: 20px;
+    padding: 28px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+}
+
+/* ---------- Section head ---------- */
+
+.section-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section-head h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text);
+    margin: 0;
+}
+
+.section-head a {
+    font-size: 0.85rem;
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* ---------- Transactions ---------- */
+
+.transaction-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.transaction-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.transaction-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: #f1f4f9;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    flex-shrink: 0;
+}
+
+.transaction-info {
+    flex: 1;
+}
+
+.transaction-info h4 {
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: var(--text);
+    margin: 0 0 2px;
+}
+
+.transaction-info span {
+    font-size: 0.78rem;
+    color: var(--text-light);
+}
+
+.amount {
+    font-size: 0.92rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.amount.negative {
+    color: #ef4444;
+}
+
+.amount.positive {
+    color: #22c55e;
+}
+
+/* ---------- Accounts summary ---------- */
+
+.account-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.account-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 16px;
+    border-radius: 12px;
+    background: #f8f9fb;
+}
+
+.account-item h4 {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--text);
+    margin: 0 0 2px;
+}
+
+.account-item span {
+    font-size: 0.76rem;
+    color: var(--text-light);
+}
+
+.account-item .amount {
+    font-size: 0.9rem;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 900px) {
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .action-row {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .dashboard-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .balance-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .action-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .dashboard-header h1 {
+        font-size: 1.8rem;
+    }
+}

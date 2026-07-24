@@ -1,0 +1,119 @@
+/* ==========================================
+   INVESTMENTS PAGE
+========================================== */
+
+.investments-page {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 20px 100px;
+}
+
+/* ---------- Header ---------- */
+
+.investments-header {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 48px;
+}
+
+.investments-header h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--text);
+    margin: 0 0 12px;
+}
+
+.investments-header p {
+    color: var(--text-light);
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* ---------- Grid ---------- */
+
+.investments-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* ---------- Card ---------- */
+
+.investment-card {
+    background: #fff;
+    border: 1px solid #edf2f7;
+    border-radius: 20px;
+    padding: 30px 24px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+    transition: 0.3s;
+}
+
+.investment-card:hover {
+    box-shadow: 0 20px 45px rgba(15, 23, 42, 0.1);
+    transform: translateY(-6px);
+}
+
+.investment-icon {
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 18px;
+    border-radius: 16px;
+    background: #fff1e5;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+}
+
+.investment-card h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text);
+    margin: 0 0 8px;
+}
+
+.investment-highlight {
+    display: inline-block;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 14px;
+}
+
+.investment-description {
+    font-size: 0.88rem;
+    color: var(--text-light);
+    line-height: 1.7;
+    margin: 0 0 20px;
+}
+
+.investment-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: var(--primary);
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.investment-btn:hover {
+    background: #d95e18;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 768px) {
+    .investments-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .investments-header h1 {
+        font-size: 1.8rem;
+    }
+}

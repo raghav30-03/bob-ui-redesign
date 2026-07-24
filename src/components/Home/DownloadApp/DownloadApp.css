@@ -1,0 +1,197 @@
+/* ==========================================
+   DOWNLOAD APP
+========================================== */
+
+.download-app {
+    padding: 120px 0;
+    background: var(--dark, #1a1a2e);
+    position: relative;
+    overflow: hidden;
+}
+
+.download-app::before {
+    content: "";
+    position: absolute;
+    top: -200px;
+    left: -150px;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(
+        circle,
+        rgba(243, 107, 33, 0.18) 0%,
+        rgba(243, 107, 33, 0) 70%
+    );
+    pointer-events: none;
+}
+
+.download-app .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* ==========================================
+   GRID
+========================================== */
+
+.download-app-grid {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.download-app-content {
+    flex: 1;
+    max-width: 520px;
+}
+
+.download-app .section-badge {
+    display: inline-block;
+    padding: 6px 16px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: var(--primary, #f36b21);
+    background: rgba(243, 107, 33, 0.12);
+    border-radius: 999px;
+}
+
+.download-app .section-title {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.download-app .section-title span {
+    color: var(--primary, #f36b21);
+}
+
+.download-app .section-description {
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.8;
+    margin-bottom: 32px;
+}
+
+/* ==========================================
+   FEATURE LIST
+========================================== */
+
+.download-app-features {
+    list-style: none;
+    margin: 0 0 40px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.download-app-features li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.download-app-features li svg {
+    flex-shrink: 0;
+    font-size: 20px;
+    color: var(--primary, #f36b21);
+}
+
+/* ==========================================
+   STORE BADGES
+========================================== */
+
+.download-app-badges {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.store-badge {
+    display: inline-flex;
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.store-badge:hover {
+    transform: translateY(-4px);
+}
+
+.store-badge img {
+    height: 48px;
+    width: auto;
+    display: block;
+}
+
+/* ==========================================
+   VISUAL / PHONE MOCKUP
+========================================== */
+
+.download-app-visual {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.phone-glow {
+    position: absolute;
+    width: 340px;
+    height: 340px;
+    background: radial-gradient(
+        circle,
+        rgba(243, 107, 33, 0.28) 0%,
+        rgba(243, 107, 33, 0) 70%
+    );
+    z-index: 0;
+}
+
+.phone-mockup {
+    position: relative;
+    z-index: 1;
+    max-width: 320px;
+    width: 100%;
+    height: auto;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 992px) {
+    .download-app {
+        padding: 90px 0;
+    }
+
+    .download-app-grid {
+        flex-direction: column;
+        text-align: center;
+        gap: 48px;
+    }
+
+    .download-app-content {
+        max-width: 100%;
+    }
+
+    .download-app-features li {
+        justify-content: center;
+    }
+
+    .download-app-badges {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .download-app .section-title {
+        font-size: 2.2rem;
+    }
+
+    .phone-mockup {
+        max-width: 240px;
+    }
+}

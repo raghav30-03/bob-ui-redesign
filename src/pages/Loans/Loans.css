@@ -1,0 +1,199 @@
+/* ==========================================
+   LOANS PAGE
+========================================== */
+
+.loans-page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 20px 100px;
+}
+
+/* ---------- Header ---------- */
+
+.loans-header {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 48px;
+}
+
+.loans-header h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--text);
+    margin: 0 0 12px;
+}
+
+.loans-header p {
+    color: var(--text-light);
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* ---------- Grid ---------- */
+
+.loans-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.loan-card {
+    background: #fff;
+    border: 1px solid #edf2f7;
+    border-radius: 20px;
+    padding: 28px 22px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+    transition: 0.3s;
+}
+
+.loan-card:hover {
+    box-shadow: 0 20px 45px rgba(15, 23, 42, 0.1);
+    transform: translateY(-6px);
+}
+
+.loan-icon {
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 18px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #f36b21, #ff934d);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+}
+
+.loan-card h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text);
+    margin: 0 0 10px;
+}
+
+.loan-rate {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 14px;
+}
+
+.loan-rate small {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--text-light);
+}
+
+.loan-description {
+    font-size: 0.86rem;
+    color: var(--text-light);
+    line-height: 1.6;
+    margin: 0 0 20px;
+}
+
+.loan-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: var(--primary);
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.88rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.loan-btn:hover {
+    background: #d95e18;
+}
+
+/* ---------- EMI calculator ---------- */
+
+.emi-calculator {
+    background: #fff;
+    border: 1px solid #edf2f7;
+    border-radius: 20px;
+    padding: 36px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+}
+
+.emi-calculator h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text);
+    margin: 0 0 28px;
+}
+
+.emi-inputs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 30px;
+}
+
+.emi-field label {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--text-light);
+    margin-bottom: 10px;
+}
+
+.emi-field input[type="range"] {
+    width: 100%;
+    accent-color: var(--primary);
+    margin-bottom: 8px;
+}
+
+.emi-field span {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.emi-result {
+    text-align: center;
+    padding: 24px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #f36b21, #ff934d);
+    color: #fff;
+}
+
+.emi-result p {
+    margin: 0 0 6px;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.emi-result h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+    color: #fff;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 992px) {
+    .loans-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .emi-inputs {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .loans-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .loans-header h1 {
+        font-size: 1.8rem;
+    }
+}

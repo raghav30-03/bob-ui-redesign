@@ -1,0 +1,191 @@
+/* ==========================================
+   FONTS
+========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap');
+
+/* ==========================================
+   RESET
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text);
+    background: #ffffff;
+    line-height: 1.5;
+    overflow-x: hidden;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+html, body {
+    overscroll-behavior-y: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: inherit;
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* ==========================================
+   CSS VARIABLES
+========================================== */
+
+:root {
+    --primary: #F36B21;
+    --primary-dark: #d95e18;
+    --dark: #1a1a2e;
+    --text: #1a1a2e;
+    --text-light: #6b7280;
+    --border: #edf2f7;
+    --bg-light: #f8f9fb;
+    --shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+    --transition: 0.3s ease;
+}
+
+/* ==========================================
+   LAYOUT / GRID SYSTEM
+========================================== */
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -12px;
+}
+
+.row > [class*="col-"] {
+    padding: 0 12px;
+    width: 100%;
+}
+
+.g-4 {
+    row-gap: 24px;
+}
+
+.gy-5 {
+    row-gap: 48px;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mt-5 {
+    margin-top: 48px;
+}
+
+@media (min-width: 768px) {
+    .col-md-6 { width: 50%; }
+}
+
+@media (min-width: 992px) {
+    .col-lg-2 { width: 16.666%; }
+    .col-lg-3 { width: 25%; }
+    .col-lg-4 { width: 33.333%; }
+    .col-lg-6 { width: 50%; }
+}
+
+/* ==========================================
+   DISPLAY UTILITIES
+========================================== */
+
+.d-none {
+    display: none;
+}
+
+.d-lg-flex {
+    display: none;
+}
+
+.d-lg-none {
+    display: flex;
+}
+
+@media (min-width: 992px) {
+    .d-lg-flex {
+        display: flex;
+    }
+
+    .d-lg-none {
+        display: none;
+    }
+}
+
+/* ==========================================
+   SHARED BUTTONS
+========================================== */
+
+.bob-btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 28px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+    background: var(--primary);
+    border-radius: 10px;
+    transition: var(--transition);
+}
+
+.bob-btn-primary:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+.bob-btn-outline {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 28px;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text);
+    background: transparent;
+    border: 1.5px solid var(--border);
+    border-radius: 10px;
+    transition: var(--transition);
+}
+
+.bob-btn-outline:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}

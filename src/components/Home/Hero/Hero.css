@@ -1,0 +1,391 @@
+/* ==========================================
+   HERO SECTION
+========================================== */
+
+.hero-section {
+    position: relative;
+    overflow: hidden;
+    padding: 90px 0;
+    background: linear-gradient(180deg, #ffffff 0%, #fff8f4 100%);
+    transform: translateZ(0);
+}
+
+/* ==========================================
+   LEFT CONTENT
+========================================== */
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 18px;
+    border-radius: 50px;
+    background: rgba(243, 107, 33, 0.12);
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    line-height: 1.15;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 25px;
+}
+
+.hero-content h1 span {
+    color: var(--primary);
+}
+
+.hero-content p {
+    max-width: 560px;
+    font-size: 1.05rem;
+    color: var(--text-light);
+    margin-bottom: 40px;
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 40px;
+}
+
+.hero-buttons button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ==========================================
+   SEARCH
+========================================== */
+
+.hero-search {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 60px;
+    padding: 16px 22px;
+    box-shadow: var(--shadow);
+    margin-bottom: 40px;
+}
+
+.hero-search svg {
+    color: var(--primary);
+    font-size: 20px;
+}
+
+.hero-search input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    padding-left: 15px;
+    font-size: 0.95rem;
+}
+
+.hero-search input::placeholder {
+    color: #9ca3af;
+}
+
+/* ==========================================
+   FEATURES
+========================================== */
+
+.hero-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #fff;
+    padding: 14px 18px;
+    border-radius: 50px;
+    box-shadow: var(--shadow);
+}
+
+.feature-item svg {
+    color: var(--primary);
+    font-size: 20px;
+}
+
+.feature-item span {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* ==========================================
+   RIGHT SIDE
+========================================== */
+
+.hero-image-wrapper {
+    position: relative;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ==========================================
+   ORANGE BACKGROUND
+========================================== */
+
+.hero-bg-shape {
+    position: absolute;
+    width: 520px;
+    height: 520px;
+    background: linear-gradient(135deg, #f36b21, #ff934d);
+    border-radius: 40% 60% 60% 40%;
+    transform: translateZ(0);
+}
+
+/* ==========================================
+   BUILDING PLACEHOLDER
+========================================== */
+
+.hero-building-placeholder {
+    position: absolute;
+    width: 360px;
+    height: 230px;
+    bottom: 20px;
+    left: 0;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.78);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-weight: 600;
+}
+
+/* ==========================================
+   PHONE PLACEHOLDER
+========================================== */
+
+.hero-phone-placeholder {
+    position: relative;
+    z-index: 5;
+    transform: translateZ(0);
+
+    width: 300px;
+    height: 620px;
+
+    border-radius: 45px;
+
+    background: white;
+
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.15);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1rem;
+    font-weight: 600;
+    color: #9ca3af;
+}
+
+.hero-phone-placeholder img{
+    max-height: 100%;
+    max-width: none !important;
+    border-radius: 50px;
+}
+
+/* ==========================================
+   FLOATING CARDS
+========================================== */
+
+.floating-card {
+    position: absolute;
+    background: white;
+    padding: 18px;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    z-index: 6;
+    transform: translateZ(0);
+}
+
+.balance-card {
+    top: 80px;
+    left: 0;
+    width: 220px;
+}
+
+.balance-card small {
+    color: var(--text-light);
+}
+
+.balance-card h4 {
+    margin: 10px 0;
+    color: var(--text);
+}
+
+.balance-card span {
+    color: #16a34a;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.success-card {
+    right: 10px;
+    bottom: 70px;
+
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.success-icon {
+    width: 46px;
+    height: 46px;
+
+    border-radius: 50%;
+
+    background: #16a34a;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: bold;
+}
+
+.success-card h5 {
+    margin-bottom: 5px;
+}
+
+.success-card span {
+    color: var(--text-light);
+    font-size: 0.85rem;
+}
+
+/* ==========================================
+   DECORATION
+========================================== */
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(243, 107, 33, 0.15);
+}
+
+.circle-one {
+    width: 80px;
+    height: 80px;
+    top: 40px;
+    right: 80px;
+}
+
+.circle-two {
+    width: 35px;
+    height: 35px;
+    bottom: 140px;
+    left: 120px;
+}
+
+.circle-three {
+    width: 22px;
+    height: 22px;
+    top: 220px;
+    right: -10px;
+}
+
+/* ==========================================
+   ANIMATION
+========================================== */
+
+@keyframes rotateBlob {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 991px) {
+    .hero-section {
+        padding: 70px 0;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 2.9rem;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-search {
+        margin-inline: auto;
+    }
+
+    .hero-features {
+        justify-content: center;
+    }
+
+    .hero-image-wrapper {
+        height: 600px;
+        margin-top: 50px;
+    }
+
+    .balance-card {
+        left: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-content h1 {
+        font-size: 2.3rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-buttons button {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hero-phone-placeholder {
+        width: 220px;
+        height: 450px;
+    }
+
+    .hero-bg-shape {
+        width: 330px;
+        height: 330px;
+    }
+
+    .balance-card,
+    .success-card {
+        position: relative;
+        margin-top: 20px;
+        width: 100%;
+    }
+}

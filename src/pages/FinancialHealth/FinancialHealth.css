@@ -1,0 +1,135 @@
+/* ==========================================
+   FINANCIAL HEALTH PAGE
+========================================== */
+
+.financial-health-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 20px 100px;
+}
+
+/* ---------- Header ---------- */
+
+.fh-header {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 48px;
+}
+
+.fh-header h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--text);
+    margin: 0 0 12px;
+}
+
+.fh-header p {
+    color: var(--text-light);
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* ---------- Grid ---------- */
+
+.fh-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 20px;
+}
+
+.fh-card {
+    background: #fff;
+    border: 1px solid #edf2f7;
+    border-radius: 20px;
+    padding: 28px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+}
+
+.fh-card h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text);
+    margin: 0 0 24px;
+}
+
+/* ---------- Metrics ---------- */
+
+.metric-list {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.metric-top {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: var(--text);
+    margin-bottom: 8px;
+}
+
+.metric-bar {
+    width: 100%;
+    height: 8px;
+    border-radius: 999px;
+    background: #edf2f7;
+    overflow: hidden;
+}
+
+.metric-fill {
+    height: 100%;
+    border-radius: 999px;
+    transition: width 0.5s ease;
+}
+
+/* ---------- Credit score ---------- */
+
+.credit-score-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.score-gauge {
+    position: relative;
+    width: 220px;
+}
+
+.score-value {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+}
+
+.score-value h2 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: var(--text);
+    margin: 0;
+}
+
+.score-value span {
+    font-size: 0.85rem;
+    color: #22c55e;
+    font-weight: 600;
+}
+
+.score-note {
+    margin-top: 12px;
+    font-size: 0.82rem;
+    color: var(--text-light);
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 768px) {
+    .fh-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .fh-header h1 {
+        font-size: 1.8rem;
+    }
+}
